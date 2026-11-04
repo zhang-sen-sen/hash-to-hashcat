@@ -7,3 +7,6 @@
 *.docx
 *.xls
 *.xlsx
+
+# 打包产物（exe 通过 Releases 发布，不入库）
+*.exe

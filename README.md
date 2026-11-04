@@ -42,14 +42,14 @@
 ## 目录结构
 
 ```
-转Hash工具.exe    Windows 绿色主程序
+转Hash工具.exe    Windows 绿色主程序（通过 Releases 发布：/releases/latest，不入库）
 tohash.py         主入口（进程内调用各转换器）
 office2john.py    Office -> $office$
 pdf2john.py       PDF    -> $pdf$
 zip2john.py       ZIP    -> $pkzip$（按 zip2john.c 移植）
 rar2john.py       RAR    -> $rar5$/$RAR3$（按 rar2john.c 移植）
 7z2john.py        7Z     -> $7z$（按 7z2john.pl 移植）
-转Hash.bat        备用启动器
+转Hash.bat        启动器（有 exe 用 exe，否则用 Python 跑源码）
 使用说明.txt       中文使用说明
 ```
 
@@ -57,4 +57,5 @@ rar2john.py       RAR    -> $rar5$/$RAR3$（按 rar2john.c 移植）
 
 - `office2john.py`、`pdf2john.py` 取自 [John the Ripper](https://www.openwall.com/john/) 官方工具集；
 - `zip2john.py`、`rar2john.py`、`7z2john.py` 为按 JtR 官方 C/Perl 实现逐行移植的 Python 版本；
+- 本项目整体采用 **GPL-2.0-or-later**（与上游 John the Ripper 一致），详见 [LICENSE](LICENSE)；
 - 本工具仅用于**恢复自己遗失的文档密码**等合法用途。
